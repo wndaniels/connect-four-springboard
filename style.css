@@ -1,0 +1,189 @@
+body {
+  background-color: black;
+  margin: auto;
+  margin-top: -30px;
+}
+
+h1 {
+  color: whitesmoke;
+  opacity: 0.85;
+  font-size: 5.5rem;
+  font-family: "Metal Mania", Helvetica;
+  text-transform: uppercase;
+  text-shadow: 3px 3px goldenrod;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: whitesmoke;
+  opacity: 0.85;
+  font-size: 1rem;
+  font-weight: 200;
+  letter-spacing: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 25px;
+}
+
+#game {
+  max-width: 750px;
+  margin: auto;
+}
+
+#board {
+  outline: solid 4px goldenrod;
+}
+
+#board td {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  background-image: url(slots.png);
+  outline: solid 1px #343434;
+}
+
+.piece {
+  margin: 0px 0px 2.5px 9px;
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+}
+
+.piece.player1 {
+  background-color: goldenrod;
+  border: solid 5px black;
+}
+
+.piece.player2 {
+  background-color: black;
+  border: solid 5px goldenrod;
+}
+
+#column-top td {
+  background-color: whitesmoke;
+  opacity: 0.85;
+}
+
+#column-top td:hover {
+  background-color: black;
+}
+
+.start-modal {
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  left: 49%;
+  transform: translate(-50%, -50%) scale(0);
+  border: 1px solid black;
+  z-index: 10;
+  padding: 10px;
+  background-color: black;
+  outline: solid 4px goldenrod;
+  width: 300px;
+}
+
+.start-modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.start-modal-body .start-button {
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 5rem;
+  font-family: "Metal Mania", Helvetica;
+  color: whitesmoke;
+  opacity: 0.85;
+}
+
+.start-modal-body .start-button:hover {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 5rem;
+  font-family: "Metal Mania", cursive;
+  text-shadow: 3px 3px goldenrod;
+}
+
+.restart-modal {
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  left: 49%;
+  transform: translate(-50%, -50%) scale(0);
+  border: 1px solid black;
+  z-index: 10;
+  padding: 10px;
+  background-color: black;
+  outline: solid 4px goldenrod;
+  width: 300px;
+}
+
+.restart-modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.restart-modal-body {
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-family: "Metal Mania", Helvetica;
+  color: whitesmoke;
+  opacity: 0.85;
+}
+
+.restart-modal-body .game-results {
+  font-size: 1rem;
+  font-weight: 200;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 5px;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.restart-modal-body .reset {
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 5rem;
+  font-family: "Metal Mania", Helvetica;
+  font-size: 5rem;
+  color: whitesmoke;
+  opacity: 0.85;
+}
+
+.restart-modal-body .reset:hover {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 5rem;
+  font-family: "Metal Mania", cursive;
+  text-shadow: 3px 3px goldenrod;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}

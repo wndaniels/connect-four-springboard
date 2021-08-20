@@ -1,0 +1,35 @@
+<!doctype html>
+
+<head>
+    <title>Connect Four Project</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>CONNECT FOUR</h1>
+    <h2>METAL EDITION</h2>
+
+    <div class="start-modal" id="start-modal">
+        <div class="start-modal-body" id="start-modal-body">
+            <button data-start-button class="start-button">Start</button>
+        </div>
+    </div>
+
+    <div class="restart-modal" id="restart-modal">
+        <div class="restart-modal-body">
+            <p class="game-results"></p>
+            <input class="reset" type="reset" value="Restart" onclick="window.location.reload()">
+        </div>
+    </div>
+
+    <div id="game">
+        <table id="board"></table>
+    </div>
+    <div id="overlay"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
