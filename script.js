@@ -63,7 +63,6 @@ const makeHtmlBoard = () => {
   }
   htmlBoard.append(playerMove);
 
-  // TODO: add comment for this code
   for (let y = 0; y < HEIGHT; y++) {
     const row = document.createElement("tr");
     for (let x = 0; x < WIDTH; x++) {
